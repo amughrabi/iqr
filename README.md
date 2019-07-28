@@ -79,8 +79,10 @@ $ iqr.sh -e '%[basename],%[width]x%[height],%[colorspace],%[quality],%[size]' -l
 Scan                    : /home/amughrabi/drive/
 Output                  : /home/amughrabi/personal/drive.csv
 To See the results; Use : tail -f /home/amughrabi/personal/drive.csv
-
-Done: /home/amughrabi/personal/tandf.csv
+Started                 : 28-Jul-2019-06:13:48-+0300
+Done                    : /home/amughrabi/personal/drive.csv
+Ended                   : 28-Jul-2019-06:14:01-+0300
+Took                    : 13 seconds.
 
 If you like it, please * this project on GitHub to make it known:
   https://github.com/amughrabi/iqr
@@ -103,18 +105,16 @@ b$ iqr.sh -e '%[basename],%[width]x%[height],%[colorspace],%[quality],%[size]' -
                         |___/  Query Retrieval
 
 Scan                    : /home/amughrabi/mughrabi.jpg
-
-Output:
+Started                 : 28-Jul-2019-06:16:54-+0300
+Output                  :
 mughrabi,117x150,sRGB,92,30.9KB
-
-
-Done: 
+Ended                   : 28-Jul-2019-06:16:54-+0300
+Took                    : 0 seconds.
 
 If you like it, please * this project on GitHub to make it known:
   https://github.com/amughrabi/iqr
 
 Bye!!
-
 ```
 ## Testing
 Passed - We tested it on 37502 images (Dataset details: https://www.kaggle.com/c/dogs-vs-cats). Make sure you have enough space to generate the output file.
