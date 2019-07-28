@@ -128,16 +128,16 @@ if [[ -f $output ]]; then
     echo "To See the results; Use : tail -f $output"
 fi
 
+start=`date +%s`
+echo "Started                 :" $(date +'%d-%b-%Y-%I:%M:%S-%z')
 if [[ -f "$loc" ]]; then
     # if it is a file?
     info=$(identify -format $expression $loc)
    if [[ -f "$output" ]]; then
      echo ${info} >> "$output"
    else
-     echo
-     echo 'Output:'
+     echo 'Output                  :'
      echo ${info}
-     echo
    fi
 else
 #
@@ -145,8 +145,11 @@ else
 # Core code
 find $loc -name '*' -exec file {} \; | grep -o -P '^.+: .* image' | cut -d ':' -f 1 | while read -r file; do info=$(identify -format $expression $file[0] | head -1); if [[ -n "$info" ]]; then echo ${info} >> $output; fi; done
 fi
-
-echo
-echo "Done: $output"
+end=`date +%s`
+if [[ -f "$output" ]]; then
+echo "Done                    : $output"
+fi
+echo "Ended                   :" $(date +'%d-%b-%Y-%I:%M:%S-%z')
+echo "Took                    :" `expr $end - $start` seconds.
 promote
 echo "Bye!!"
