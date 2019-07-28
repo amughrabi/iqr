@@ -22,7 +22,7 @@ It's really simple to use, just choose a directory from the lake and replace in 
 * LOCATION
 * OUTPUT
 ```shell
-iqr.sh -e 'EXPRESSION' -l LOCATION -o OUTPUT
+iqr.sh -e 'EXPRESSION' -l 'LOCATION' -o 'OUTPUT'
 ```
 The EXPRESSION is the [Long/Short Form Attribute Percent Escapes](https://imagemagick.org/script/escape.php); for example, you can use `'%[basename],%[width]x%[height],%[colorspace],%[quality],%[size]'` to reterive the `name,WxH,COLORSPACE,QUALITY,SIZE` in your csv file.
 
@@ -57,7 +57,7 @@ iqr.sh [options] -e expression -l directory -o output.csv
 
     -V, -verbose,       --verbose               Run script in verbose mode. Will print out each step of execution.
 ```
-## Example
+## Examples
 ```shell
 $ iqr.sh -e '%[basename],%[width]x%[height],%[colorspace],%[quality],%[size]' -l /home/amughrabi/drive/ -o /home/amughrabi/personal/drive.csv
   _____
@@ -85,7 +85,7 @@ After the process is completed, use some visual tools such as Excel to understan
 
 You can also scan 1 image - Please note that if the `-o` is not added to the command, the output of the expression will be on the console.
 ```shell
-b$ iqr.sh -e '%[basename],%[width]x%[height],%[colorspace],%[quality],%[size]' -l ~/Vergnolle-1550863412733.jpg 
+b$ iqr.sh -e '%[basename],%[width]x%[height],%[colorspace],%[quality],%[size]' -l ~/mughrabi.jpg 
   _____
   \_   \_ __ ___   __ _  __ _  ___
    / /\/ '_ ` _ \ / _` |/ _` |/ _ \
@@ -93,10 +93,10 @@ b$ iqr.sh -e '%[basename],%[width]x%[height],%[colorspace],%[quality],%[size]' -
 \____/ |_| |_| |_|\__,_|\__, |\___|
                         |___/  Query Retrieval
 
-Scan                    : /home/amughrabi/Vergnolle-1550863412733.jpg
+Scan                    : /home/amughrabi/mughrabi.jpg
 
 Output:
-Vergnolle-1550863412733,117x150,sRGB,92,30.9KB
+mughrabi,117x150,sRGB,92,30.9KB
 
 
 Done: 
