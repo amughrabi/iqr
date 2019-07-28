@@ -116,6 +116,8 @@ If you like it, please * this project on GitHub to make it known:
 Bye!!
 
 ```
+## Testing
+Passed - We tested it on 37502 images (Dataset details: https://www.kaggle.com/c/dogs-vs-cats). Make sure you have enough space to generate the output file.
 
 ## Thanks!!
 For any kind of problem, please don't hesitate to open an issue here on *GitHub*.
