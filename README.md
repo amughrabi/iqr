@@ -1,5 +1,14 @@
 # Image Query Reterival - IQR
-Image Query Retrieval is a tool that retrieves selected image information from a specific directory. It used for reporting and visualize your data lake.
+```
+  _____
+  \_   \_ __ ___   __ _  __ _  ___
+   / /\/ '_ ` _ \ / _` |/ _` |/ _ \
+/\/ /_ | | | | | | (_| | (_| |  __/
+\____/ |_| |_| |_|\__,_|\__, |\___|
+                        |___/  Query Retrieval
+```
+                        
+**Image Query Retrieval** is a tool that retrieves selected image information from a specific directory. It used for reporting and visualize your data lake.
 
 ## Requirements & Setup
 ```shell
