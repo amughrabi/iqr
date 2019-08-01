@@ -1,4 +1,4 @@
-# Image Query Reterival - IQR
+# Image Query Retrieval - IQR
 ```
                                   _____
                                   \_   \_ __ ___   __ _  __ _  ___
